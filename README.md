@@ -41,19 +41,19 @@ task-manager-mern/
 ## Screenshots
 
 ### 1. Homepage
-![Homepage](screenshots/01_homepage.png)
+![Homepage](screenshots/01 homepage.png)
 
 ### 2. Add Task
-![Add Task](screenshots/02_Addtask.png)
+![Add Task](screenshots/02 Addtask.png)
 
 ### 3. Edit Task
-![Edit Task](screenshots/03_edittask.png)
+![Edit Task](screenshots/03 edittask.png)
 
 ### 4. Delete Task
-![Delete Task](screenshots/04_delete_task.png)
+![Delete Task](screenshots/04 delete task.png)
 
 ### 5. MongoDB Storage
-![MongoDB](screenshots/05_mongoDB.png)
+![MongoDB](screenshots/05 mongoDB.png)
 
 ## Author
 Rethna R
