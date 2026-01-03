@@ -29,12 +29,35 @@ function App() {
       .then(() => setTasks(tasks.filter((task) => task._id !== id)));
   };
 
+  // EDIT task
+  const editTask = (id, updatedData) => {
+    fetch(`http://localhost:5000/api/tasks/${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedData),
+    })
+      .then((res) => res.json())
+      .then((data) =>
+        setTasks(tasks.map((task) => (task._id === id ? data : task)))
+      );
+  };
+
   return (
-    <div>
-      <h1>Task Manager</h1>
-      <TaskForm addTask={addTask} />
-      <TaskList tasks={tasks} deleteTask={deleteTask} />
-    </div>
+    <div
+  style={{
+    maxWidth: "700px",
+    margin: "30px auto",
+    padding: "20px",
+    textAlign: "center",
+    fontFamily: "Arial, sans-serif",
+  }}
+>
+  <h1 style={{ color: "#333", marginBottom: "20px" }}>Task Manager </h1>
+  <TaskForm addTask={addTask} />
+  <TaskList tasks={tasks} deleteTask={deleteTask} editTask={editTask} />
+</div>
+
+
   );
 }
 
