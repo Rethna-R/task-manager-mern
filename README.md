@@ -39,7 +39,21 @@ task-manager-mern/
 4. Open your browser at http://localhost:3000
 
 ## Screenshots
-Screenshots demonstrating Add, Edit, Delete tasks and MongoDB storage are in the `screenshots/` folder.
+
+### 1. Homepage
+![Homepage](screenshots/01_homepage.png)
+
+### 2. Add Task
+![Add Task](screenshots/02_Addtask.png)
+
+### 3. Edit Task
+![Edit Task](screenshots/03_edittask.png)
+
+### 4. Delete Task
+![Delete Task](screenshots/04_delete_task.png)
+
+### 5. MongoDB Storage
+![MongoDB](screenshots/05_mongoDB.png)
 
 ## Author
 Rethna R
